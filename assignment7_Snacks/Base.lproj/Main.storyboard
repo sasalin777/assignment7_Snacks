@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="assignment7_Snacks" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qg4-RH-I5m">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="88"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MFP-14-Vok">
+                                        <rect key="frame" x="344" y="40" width="45" height="38"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="＋">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="plusPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SMo-k4-vV2"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.8666666666666667" green="0.8666666666666667" blue="0.8666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="MFP-14-Vok" firstAttribute="top" secondItem="Qg4-RH-I5m" secondAttribute="top" constant="40" id="XZD-5q-gTM"/>
+                                    <constraint firstAttribute="height" constant="88" id="hht-bh-3UF"/>
+                                    <constraint firstAttribute="trailing" secondItem="MFP-14-Vok" secondAttribute="trailing" constant="25" id="ooY-PB-4II"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Qg4-RH-I5m" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="6Us-8O-LAY"/>
+                            <constraint firstItem="Qg4-RH-I5m" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9mn-m1-6yB"/>
+                            <constraint firstItem="Qg4-RH-I5m" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="vSx-cu-5qg"/>
+                            <constraint firstItem="Qg4-RH-I5m" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="zB4-4i-lo7"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="heightChange" destination="hht-bh-3UF" id="qoU-Fu-Ny1"/>
+                        <outlet property="navBarView" destination="Qg4-RH-I5m" id="xPd-OM-bKv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="84.375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
